@@ -1,17 +1,21 @@
 import Head from 'next/head';
+import { Box } from '@chakra-ui/react';
+import HomePage from '../components/HomePage';
 
 const Home = () => (
-  <div>
+  <Box>
     <Head>
       <title>SalesMax</title>
       <meta name="description" content="SalesMax" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <main>Main</main>
+    <main>
+      <HomePage />
+    </main>
 
     <footer>Footer</footer>
-  </div>
+  </Box>
 );
 
 export default Home;

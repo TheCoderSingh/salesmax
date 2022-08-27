@@ -1,11 +1,11 @@
-import { Button, FormControl, Input } from '@chakra-ui/react';
+import { Box, Button, FormControl, Input } from '@chakra-ui/react';
 import Image from 'next/image';
 import sales from '../assets/sales.jpg';
 
 const login = () => (
-  <div className="login">
-    <div className="login-left">
-      <div className="login-form">
+  <Box className="login">
+    <Box className="login-left">
+      <Box className="login-form">
         <h1>Login to SalesMax</h1>
         <form>
           <FormControl isRequired>
@@ -18,9 +18,9 @@ const login = () => (
             <Button type="submit">Login</Button>
           </FormControl>
         </form>
-      </div>
-    </div>
-    <div className="login-right">
+      </Box>
+    </Box>
+    <Box className="login-right">
       <Image src={sales} alt="Sales" />
       <a
         target="_blank"
@@ -29,8 +29,8 @@ const login = () => (
       >
         Image by vectorjuice on Freepik
       </a>
-    </div>
-  </div>
+    </Box>
+  </Box>
 );
 
 export default login;
