@@ -213,3 +213,41 @@ span {
   background: rgb(58, 102, 213);
   color: #fff;
 }
+
+.sales-item-img {
+  max-width: 100px;
+}
+
+.sales-items-table {
+  width: 80%;
+  margin: 60px auto;
+}
+
+.sales-items-table th,
+.sales-items-table td,
+.sales-items-table img,
+.sales-items-table input {
+  text-align: center !important;
+  margin: auto;
+}
+
+.quantity-inp {
+  width: 60px !important;
+}
+
+.sales-item-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.sales-item-actions svg {
+  margin: 5px;
+  border: 1px solid;
+  padding: 2px;
+  color: #777;
+}
+
+.sales-item-actions svg:hover {
+  color: #000;
+  cursor: pointer;
+}
