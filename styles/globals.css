@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap');
+
 /**** Login ****/
 .login {
   display: flex;
@@ -97,6 +99,7 @@
 .home {
   display: flex;
   height: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
 
 .home-nav {
@@ -109,6 +112,7 @@
   color: #fff;
   font-size: 1.3em;
   padding: 30px 0 20px 20px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .home-nav h2 {
@@ -116,6 +120,7 @@
   font-weight: bold;
   padding-left: 10px;
   margin: 5px 0;
+  font-family: 'Raleway', sans-serif;
 }
 
 .home-nav hr {
@@ -136,11 +141,13 @@
 }
 
 .home-nav-item span,
-.home-nav-item svg {
+.home-nav-item svg,
+.home-nav-item a {
   color: #fff;
 }
 
-.home-nav-item span {
+.home-nav-item a,
+span {
   margin-left: 10px;
 }
 
@@ -155,7 +162,8 @@
 }
 
 .home-nav-item:hover span,
-.home-nav-item:hover svg {
+.home-nav-item:hover svg,
+.home-nav-item:hover a {
   color: #222;
 }
 
@@ -169,4 +177,39 @@
   padding: 10px;
   text-transform: uppercase;
   font-size: 0.8em;
+}
+
+.home-content {
+  width: 85%;
+}
+
+/**** Create Sales Order ****/
+.sales-order-create {
+  padding: 20px;
+}
+
+.sales-order-create h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.sales-order-area form {
+  display: flex;
+}
+
+.sku-input {
+  width: 100%;
+}
+
+.sku-input input {
+  border-radius: 0;
+}
+
+.sku-btn button {
+  border-radius: 0;
+  width: 100px;
+  background: rgb(58, 102, 213);
+  color: #fff;
 }

@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { Box } from '@chakra-ui/react';
-import HomePage from '../components/HomePage';
+import { HomePage } from '../components';
 
 const Home = () => (
   <Box>

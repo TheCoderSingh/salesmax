@@ -1,0 +1,12 @@
+export { default as HomePage } from './HomePage';
+export { default as Dashboard } from './Dashboard';
+export { default as CreateSalesOrder } from './CreateSalesOrder';
+export { default as SalesOrderLookup } from './SalesOrderLookup';
+export { default as Orders } from './Orders';
+export { default as InventoryLookup } from './InventoryLookup';
+export { default as Commission } from './Commission';
+export { default as SavedOrders } from './SavedOrders';
+export { default as AddCustomer } from './AddCustomer';
+export { default as CustomerLookup } from './CustomerLookup';
+export { default as Customers } from './Customers';
+export { default as Salespersons } from './Salespersons';
