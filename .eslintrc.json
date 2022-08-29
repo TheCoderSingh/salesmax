@@ -19,6 +19,7 @@
         "namedComponents": "arrow-function",
         "unnamedComponents": "arrow-function"
       }
-    ]
+    ],
+    "no-plusplus": "off"
   }
 }
