@@ -17,6 +17,7 @@ import { useState } from 'react';
 import { MdDelete, MdInventory2 } from 'react-icons/md';
 
 const CreateSalesOrder = () => {
+  // eslint-disable-next-line no-unused-vars
   const [items, setItems] = useState([
     {
       id: 1,
