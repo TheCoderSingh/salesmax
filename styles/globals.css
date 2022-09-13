@@ -214,6 +214,26 @@ span {
   color: #fff;
 }
 
+.invalid-sku {
+  display: flex;
+  align-items: center;
+  background: rgb(213, 20, 20);
+  padding-left: 10px;
+  margin-top: 2px;
+}
+
+.invalid-sku svg {
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+.invalid-sku p {
+  color: #fff;
+  padding: 5px;
+  margin-top: 5px 0 0 0;
+}
+
 .sales-item-img {
   max-width: 100px;
 }
@@ -250,4 +270,16 @@ span {
 .sales-item-actions svg:hover {
   color: #000;
   cursor: pointer;
+}
+
+.sales-order-empty {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sales-order-empty h2 {
+  font-size: 2em;
+  margin-left: 10px;
 }
