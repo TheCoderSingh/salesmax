@@ -17,6 +17,8 @@ import { useStateContext } from '../context/StateContext';
 const SalesItemsTable = () => {
   const { cartItems } = useStateContext();
 
+  const subtotal = cartItems.reduce((acc, obj) => acc + obj.price, 0);
+
   return (
     <TableContainer className="sales-items-table">
       <Table>
@@ -74,7 +76,7 @@ const SalesItemsTable = () => {
             <Td />
             <Td />
             <Td>Subtotal</Td>
-            <Td>$1898</Td>
+            <Td>${subtotal}</Td>
             <Td />
           </Tr>
         </Tbody>
