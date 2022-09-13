@@ -13,11 +13,20 @@ import {
 } from '@chakra-ui/react';
 import { MdDelete, MdInventory2 } from 'react-icons/md';
 import { useStateContext } from '../context/StateContext';
+import { getSkuIndexInCart } from '../utils/helper';
 
 const SalesItemsTable = () => {
-  const { cartItems } = useStateContext();
+  const { cartItems, setCartItems } = useStateContext();
 
   const subtotal = cartItems.reduce((acc, obj) => acc + obj.price, 0);
+
+  const removeItem = sku => {
+    const index = getSkuIndexInCart(sku, cartItems);
+
+    const newState = [...cartItems];
+    newState.splice(index, 1);
+    setCartItems(newState);
+  };
 
   return (
     <TableContainer className="sales-items-table">
@@ -57,16 +66,20 @@ const SalesItemsTable = () => {
               <Td>${item.price}</Td>
               <Td>
                 <Box className="sales-item-actions">
-                  <Tooltip label="Remove Item">
-                    <span>
-                      <MdDelete size={25} />
-                    </span>
-                  </Tooltip>
-                  <Tooltip label="Check inventory">
-                    <span>
-                      <MdInventory2 size={25} />
-                    </span>
-                  </Tooltip>
+                  <Box onClick={() => removeItem(item.sku)}>
+                    <Tooltip label="Remove Item">
+                      <span>
+                        <MdDelete size={25} />
+                      </span>
+                    </Tooltip>
+                  </Box>
+                  <Box>
+                    <Tooltip label="Check inventory">
+                      <span>
+                        <MdInventory2 size={25} />
+                      </span>
+                    </Tooltip>
+                  </Box>
                 </Box>
               </Td>
             </Tr>
